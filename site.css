@@ -3,13 +3,61 @@ body {
     font-family: sans-serif;
     
     display: grid;
-    grid-template-areas:"header" "section" "aside" "footer";
+    grid-template-areas:
+    "Header" 
+    "FeaturedArticles" 
+    "SideContent" 
+    "Footer";
     grid-gap: 10px;
     padding: 10px;
     
 }
 
-header {grid-area: header;}
-section {grid-area: section;}
-aside {grid-area: aside;}
-footer {grid-area: footer;}
+.Header 
+{
+    display: grid;
+    grid-template-areas:".LogoPic nav .LogInButton";
+    grid-gap: 10px;
+    padding: 10px;
+    
+}
+
+.FeaturedArticles
+{ 
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.LogInButton
+{
+    align-content: center;
+}
+
+header>nav>ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header>nav>ul>li
+{
+    display: inline; 
+}
+
+.responsivePic
+{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+
+.LogoPic{grid-area: LogoPic;}
+.LogInButton{grid-area: LogInButton;}
+
+.Header {grid-area: Header;}
+.FeaturedArticles{grid-area: FeaturedArticles;}
+.SideContent{grid-area: SideContent;}
+.Footer {grid-area: Footer;}

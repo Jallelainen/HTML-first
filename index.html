@@ -9,10 +9,11 @@
     </head>
 
     <body>
-        <header>
-
-            <img src="Pics/LOGO.png" alt="BF-109 Messerschmidt Logo" style="width:380px;height: auto;">
-            <h1>The WWII Aviation Heritage</h1>
+        <header class="Header">
+            <div id="LogoPic">
+                <img src="Pics/LOGO.png" alt="BF-109 Messerschmidt Logo" class="responsivePic">
+                <h1>The WWII Aviation Heritage</h1>
+            </div>
             
             <nav>
                 <h5>Most read articles this week:</h5>
@@ -23,18 +24,22 @@
                 </ul>
             </nav>
             
-            <h4><a href= "LogIn.html">Login</a></h4>
+            <div id= "LogInButton">
+                <h4><a href= "LogIn.html">Login</a></h4>
+            </div>
 
         </header>
 
-        <section>
-            <h3>FEATURED</h3>
+        
+
+        <section class="FeaturedArticles">
+                <h3>FEATURED</h3>
             <p>
                 Here are two articles that we think you might enjoy. Our staff has been working
                 around the clock to provide you with this quality original content. Be sure to give 
                 them a shout-out and share these articles.
             </p>
-
+            
             <article>
                 <h4>The Story of the "All-American" B-17, a Smooth Landing</h4>
                 <img src="pics/B-17-All-American-Flight.jpg" alt="B-17 All-American">
@@ -51,7 +56,7 @@
                     chain email just didn’t make sense, so we decided to do some research.
                 </p>
             </article>
-
+            
             <article>
                 <h4>See This WWII Pilot Fly His Dream Aircraft</h4>
                 <p>
@@ -78,52 +83,55 @@
                     Preservation Group (HTPG) arranged something incredibly special for him
                 </p>
             </article>
-
+            
         </section>
+        
+        <div class="SideContent">
 
-        <aside>
-            <h3>Most Produced Aircrafts of WWII</h3>
-            <ul>
-                <li>
-                    <b>United States of America</b>
-                    <ol>
-                        <li>B-24 Liberator – 18,482 Units</li>
-                        <li>P-47 Thunderbolt – 16,231 Units</li>
-                        <li>P-51 Mustang – 15,875 Units</li>
-                    </ol>
-                </li>
-                <li>
-                    <b>Soviet Union</b>
-                    <ol>
-                        <li>Ilyushin Il-2 - 36,183 Units</li>
-                        <li>Yakovlev Yak-3 – 31,000+ Units</li>
-                        <li>Yakolev Yak-9 - 16,793 Units</li>
-                    </ol>
-                </li>
-                <li>
-                    <b>Great Britain</b>
-                    <ol>
-                        <li>Spitfire – 20,351 Units</li>
-                        <li>Hawker Hurricane – 14,533 Units</li>
-                        <li>Vickers Wellington - 11,403 Units</li>
-                    </ol>
-                </li>
-                <li>
-                    <b>Germany</b>
-                    <ol>
-                        <li>Messerschmitt Bf 109 – 30,480 Units</li>
-                        <li>Fw 190 – 29,001 Units</li>
-                        <li>Junkers Ju-88 – 15,000 Units</li>
-                    </ol>
-                </li>
-            </ul>
-
-        </aside>
-
-        <footer>
-            <p><span class="glyphicon">&copy;</span> Marcus Jarlevid</p>
-        </footer>
-
-    </body>
+            <aside>
+                <h3>Most Produced Aircrafts of WWII</h3>
+                <ul>
+                    <li>
+                        <b>United States of America</b>
+                        <ol>
+                            <li>B-24 Liberator – 18,482 Units</li>
+                            <li>P-47 Thunderbolt – 16,231 Units</li>
+                            <li>P-51 Mustang – 15,875 Units</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <b>Soviet Union</b>
+                        <ol>
+                            <li>Ilyushin Il-2 - 36,183 Units</li>
+                            <li>Yakovlev Yak-3 – 31,000+ Units</li>
+                            <li>Yakolev Yak-9 - 16,793 Units</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <b>Great Britain</b>
+                        <ol>
+                            <li>Spitfire – 20,351 Units</li>
+                            <li>Hawker Hurricane – 14,533 Units</li>
+                            <li>Vickers Wellington - 11,403 Units</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <b>Germany</b>
+                        <ol>
+                            <li>Messerschmitt Bf 109 – 30,480 Units</li>
+                            <li>Fw 190 – 29,001 Units</li>
+                            <li>Junkers Ju-88 – 15,000 Units</li>
+                        </ol>
+                    </li>
+                </ul>
+            </aside>
+            
+        </div>
+    
+    <footer class="Footer">
+        <p><span class="glyphicon">&copy;</span> Marcus Jarlevid</p>
+    </footer>
+    
+</body>
 
 </html>
