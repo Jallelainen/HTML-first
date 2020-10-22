@@ -6,38 +6,41 @@
     <link href="site.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="loginPage">
 
     <header>
         <div id="LogoPic">
             <img src="Pics/LOGO.png" alt="BF-109 Messerschmidt Logo" class="responsivePic">
-            <h2>The WWII Aviation Heritage</h2>
+            <h2>WWII Aviation Heritage</h2>
         </div>
 
         <nav>
             <h5>Most read articles this week:</h5>
             <ul>
-                <li><a href="GrummanF8F.html">Grumman F8F "Bearcat"</a></li>
-                <li><a href="DornierDO215.html">Dornier Do 215</a></li>
-                <li><a href="MitsubishiA6M.html">Mitsubishi A6M "Zero / Zeke"</a></li>
+                <li><a href="GrummanF8F.html" class="loginA">Grumman F8F "Bearcat"</a></li>
+                <li><a href="DornierDO215.html" class="loginA">Dornier Do 215</a></li>
+                <li><a href="MitsubishiA6M.html" class="loginA">Mitsubishi A6M "Zero / Zeke"</a></li>
             </ul>
         </nav>
 
         <div id="LogInButton">
             <h4><a href="index.html">Home</a></h4>
         </div>
-        
+
     </header>
 
-    <section class="FeaturedArticles">
-        <h2>Login</h2>
-        <form>
-            <p>Username: <input type="text"></p>
-            <p>Password: <input type="text"></p>
-            <input type="button" value="Login">
-            <input type="reset" value="Reset">
-        </form>
-    </section>
+    <main class="mainContent">
+        <div id="loginForm">
+
+            <h2>Login</h2>
+            <form>
+                <p>Username: <input type="text"></p>
+                <p>Password: <input type="password"></p>
+                <input type="button" value="Login" id="buttonLogin">
+                <input type="reset" value="Reset" id="buttonReset">
+            </form>
+        </div>
+    </main>
 
     <footer>
         <p><span class="glyphicon">&copy;</span> Marcus Jarlevid</p>

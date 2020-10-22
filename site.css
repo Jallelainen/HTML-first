@@ -1,12 +1,28 @@
-body {
+.index {
   background-color: lightgray;
   font-family: sans-serif;
 
   display: grid;
   grid-template-areas:
     "Header Header Header Header Header"
-    "FeaturedArticles FeaturedArticles FeaturedArticles SideContent Sidecontent"
+    "mainContent mainContent mainContent SideContent Sidecontent"
     "Footer Footer Footer Footer Footer";
+  grid-gap: 10px;
+  padding: 10px;
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.loginPage {
+  background-color: lightgray;
+  font-family: sans-serif;
+
+  display: grid;
+  grid-template-areas:
+    "Header"
+    "mainContent"
+    "Footer";
   grid-gap: 10px;
   padding: 10px;
   width: 1024px;
@@ -19,36 +35,48 @@ header {
 
   grid-area: Header;
   display: grid;
-  grid-template-areas: "LogoPic nav LogInButton";
-  grid-gap: 10px;
+  grid-template-areas: "LogoPic nav . . LogInButton";
+  grid-gap: 15px;
   padding: 10px;
 }
 
 header > nav {
   background-color: teal;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 header > nav > ul {
   list-style-type: none;
+  width: 100%;
   margin: 0;
   padding: 0;
+}
+
+header > nav > h5 {
+  padding-left: 15px;
 }
 
 header > nav > ul > li {
   background-color: turquoise;
   float: left;
   display: inline;
-  
 }
 
 header > nav > ul > li > a {
   display: block;
-  padding: 10px;
+  padding: 15px;
 }
 
-header > nav > ul > li > a:hover{
-    background-color: cadetblue;
+header > nav > ul > li > .loginA {
+  display: block;
+  padding: 14px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+header > nav > ul > li > a:hover {
+  background-color: cadetblue;
 }
 
 .responsivePic {
@@ -59,6 +87,7 @@ header > nav > ul > li > a:hover{
 
 #LogoPic {
   grid-area: LogoPic;
+  padding: 10px;
   text-align: center;
   background-color: teal;
 }
@@ -66,21 +95,74 @@ header > nav > ul > li > a:hover{
 #LogInButton {
   grid-area: LogInButton;
   background-color: teal;
-  padding-top: 40px;
+  padding-top: 60px;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
 }
 
-.FeaturedArticles {
+.mainContent {
   background-color: rosybrown;
+  grid-area: mainContent;
+}
 
-  grid-area: FeaturedArticles;
+#allArticles {
   display: grid;
   grid-template-areas:
     "featuredIntro featuredIntro"
     "article1 article2";
 }
+
+#loginPage {
+  width: 100%;
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main > div > h2 {
+  width: 100px;
+  margin-left: auto;
+  margin-right: 542px;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: khaki;
+}
+
+main > div > form {
+  border-radius: 20px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  padding: 20px;
+  text-align: left;
+  background-color: khaki;
+}
+
+#buttonLogin {
+  background-color: #4caf50; 
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#buttonReset {
+    background-color: rgb(160, 47, 3); 
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
 
 #featuredIntro {
   background-color: tan;
@@ -110,6 +192,7 @@ header > nav > ul > li > a:hover{
   background-color: saddlebrown;
 
   grid-area: SideContent;
+  grid-column: 4 / span 2;
   padding: 10px;
 }
 footer {
