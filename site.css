@@ -1,37 +1,33 @@
 body {
     background-color: lightgray;
     font-family: sans-serif;
-    
+
     display: grid;
     grid-template-areas:
-    "Header" 
-    "FeaturedArticles" 
-    "SideContent" 
-    "Footer";
+    "Header Header Header Header Header" 
+    "FeaturedArticles FeaturedArticles FeaturedArticles SideContent Sidecontent"  
+    "Footer Footer Footer Footer Footer";
     grid-gap: 10px;
     padding: 10px;
-    
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.Header 
+.header 
 {
-    display: grid;
-    grid-template-areas:".LogoPic nav .LogInButton";
-    grid-gap: 10px;
-    padding: 10px;
-    
-}
+    background-color: wheat;
 
-.FeaturedArticles
-{ 
+    grid-area: Header;
     display: grid;
+    grid-template-areas:"LogoPic nav LogInButton";
     grid-gap: 10px;
     padding: 10px;
 }
 
-.LogInButton
+header>nav
 {
-    align-content: center;
+    background-color: teal;
 }
 
 header>nav>ul
@@ -43,21 +39,88 @@ header>nav>ul
 
 header>nav>ul>li
 {
+    background-color: turquoise;
+    float: left;
     display: inline; 
+}
+
+header>nav>ul>li>a
+{
+    display: block;
+    padding: 8px;
 }
 
 .responsivePic
 {
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
     height: auto;
 }
 
 
-.LogoPic{grid-area: LogoPic;}
-.LogInButton{grid-area: LogInButton;}
+#LogoPic
+{
+    grid-area: LogoPic;
+    text-align: center;
+    background-color: teal;
+}
 
-.Header {grid-area: Header;}
-.FeaturedArticles{grid-area: FeaturedArticles;}
-.SideContent{grid-area: SideContent;}
-.Footer {grid-area: Footer;}
+#LogInButton
+{
+    grid-area: LogInButton;
+    background-color: teal;
+    text-align: center;
+}
+
+.FeaturedArticles
+{
+    background-color: rosybrown;
+
+    grid-area: FeaturedArticles;
+    display: grid;
+    grid-template-areas:
+    "featuredIntro featuredIntro"
+    "article1 article2";
+}
+
+#featuredIntro
+{
+    background-color: tan;
+
+    grid-area: featuredIntro;
+    margin: 10px;
+    padding: 10px;
+}
+
+#article1
+{
+    background-color: tan;
+
+    grid-area: article1;
+    margin: 10px;
+    padding: 10px;
+}
+
+#article2
+{
+    background-color: tan;
+
+    grid-area: article2;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.SideContent
+{
+   background-color: saddlebrown;
+
+    grid-area: SideContent;
+    padding: 10px;
+}
+.Footer 
+{
+    background-color: slategray;
+    text-align: center;
+    grid-area: Footer;
+}
