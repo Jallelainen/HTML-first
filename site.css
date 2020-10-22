@@ -1,126 +1,119 @@
 body {
-    background-color: lightgray;
-    font-family: sans-serif;
+  background-color: lightgray;
+  font-family: sans-serif;
 
-    display: grid;
-    grid-template-areas:
-    "Header Header Header Header Header" 
-    "FeaturedArticles FeaturedArticles FeaturedArticles SideContent Sidecontent"  
+  display: grid;
+  grid-template-areas:
+    "Header Header Header Header Header"
+    "FeaturedArticles FeaturedArticles FeaturedArticles SideContent Sidecontent"
     "Footer Footer Footer Footer Footer";
-    grid-gap: 10px;
-    padding: 10px;
-    width: 1024px;
-    margin-left: auto;
-    margin-right: auto;
+  grid-gap: 10px;
+  padding: 10px;
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.header 
-{
-    background-color: wheat;
+header {
+  background-color: wheat;
 
-    grid-area: Header;
-    display: grid;
-    grid-template-areas:"LogoPic nav LogInButton";
-    grid-gap: 10px;
-    padding: 10px;
+  grid-area: Header;
+  display: grid;
+  grid-template-areas: "LogoPic nav LogInButton";
+  grid-gap: 10px;
+  padding: 10px;
 }
 
-header>nav
-{
-    background-color: teal;
+header > nav {
+  background-color: teal;
+  padding: 10px;
 }
 
-header>nav>ul
-{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+header > nav > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-header>nav>ul>li
-{
-    background-color: turquoise;
-    float: left;
-    display: inline; 
+header > nav > ul > li {
+  background-color: turquoise;
+  float: left;
+  display: inline;
+  
 }
 
-header>nav>ul>li>a
-{
-    display: block;
-    padding: 8px;
+header > nav > ul > li > a {
+  display: block;
+  padding: 10px;
 }
 
-.responsivePic
-{
-    width: 100%;
-    max-width: 250px;
-    height: auto;
+header > nav > ul > li > a:hover{
+    background-color: cadetblue;
 }
 
-
-#LogoPic
-{
-    grid-area: LogoPic;
-    text-align: center;
-    background-color: teal;
+.responsivePic {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
 }
 
-#LogInButton
-{
-    grid-area: LogInButton;
-    background-color: teal;
-    text-align: center;
+#LogoPic {
+  grid-area: LogoPic;
+  text-align: center;
+  background-color: teal;
 }
 
-.FeaturedArticles
-{
-    background-color: rosybrown;
+#LogInButton {
+  grid-area: LogInButton;
+  background-color: teal;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
 
-    grid-area: FeaturedArticles;
-    display: grid;
-    grid-template-areas:
+.FeaturedArticles {
+  background-color: rosybrown;
+
+  grid-area: FeaturedArticles;
+  display: grid;
+  grid-template-areas:
     "featuredIntro featuredIntro"
     "article1 article2";
 }
 
-#featuredIntro
-{
-    background-color: tan;
+#featuredIntro {
+  background-color: tan;
 
-    grid-area: featuredIntro;
-    margin: 10px;
-    padding: 10px;
+  grid-area: featuredIntro;
+  margin: 10px;
+  padding: 10px;
 }
 
-#article1
-{
-    background-color: tan;
+#article1 {
+  background-color: tan;
 
-    grid-area: article1;
-    margin: 10px;
-    padding: 10px;
+  grid-area: article1;
+  margin: 10px;
+  padding: 10px;
 }
 
-#article2
-{
-    background-color: tan;
+#article2 {
+  background-color: tan;
 
-    grid-area: article2;
-    margin: 10px;
-    padding: 10px;
-
+  grid-area: article2;
+  margin: 10px;
+  padding: 10px;
 }
 
-.SideContent
-{
-   background-color: saddlebrown;
+.SideContent {
+  background-color: saddlebrown;
 
-    grid-area: SideContent;
-    padding: 10px;
+  grid-area: SideContent;
+  padding: 10px;
 }
-.Footer 
-{
-    background-color: slategray;
-    text-align: center;
-    grid-area: Footer;
+footer {
+  background-color: slategray;
+  text-align: center;
+  grid-area: Footer;
 }
