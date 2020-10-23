@@ -90,22 +90,22 @@ header > nav > ul > li > a:hover {
   background-color: #8eb897;
 }
 
-header > #LogInButton > h4{
-    margin-top: 80px;
+header > #LogInButton > h4 {
+  margin-top: 80px;
 }
 
-header > #LogInButton > h4 >a{
-    color: #040403;
-    background-color: #8eb897;
-    
-    padding-top: 80px;
-    padding-bottom: 86px;
-    padding-left: 20px;
-    padding-right: 21px;
+header > #LogInButton > h4 > a {
+  color: #040403;
+  background-color: #8eb897;
+
+  padding-top: 80px;
+  padding-bottom: 86px;
+  padding-left: 20px;
+  padding-right: 21px;
 }
 
-header > #LogInButton > h4 >a:hover{
-    background-color: #c3e8bd;
+header > #LogInButton > h4 > a:hover {
+  background-color: #c3e8bd;
 }
 
 #LogInButton {
@@ -206,13 +206,13 @@ main > div > form {
 .SideContent {
   background-color: #5b7553;
   color: antiquewhite;
-  
+
   grid-area: SideContent;
   grid-column: 4 / span 2;
   padding: 10px;
 }
 
-aside > ul{
+aside > ul {
   list-style-type: none;
 }
 
