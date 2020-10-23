@@ -1,5 +1,5 @@
 .index {
-  background-color: lightgray;
+  background-color: white;
   font-family: sans-serif;
 
   display: grid;
@@ -15,7 +15,7 @@
 }
 
 .loginPage {
-  background-color: lightgray;
+  background-color: white;
   font-family: sans-serif;
 
   display: grid;
@@ -31,19 +31,16 @@
 }
 
 header {
-  background-color: wheat;
+  background-color: #9ddbad;
 
   grid-area: Header;
   display: grid;
   grid-template-areas: "LogoPic nav . . LogInButton";
   grid-gap: 15px;
-  padding: 10px;
 }
 
 header > nav {
-  background-color: teal;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  background-color: #8eb897;
 }
 
 header > nav > ul {
@@ -53,30 +50,31 @@ header > nav > ul {
   padding: 0;
 }
 
-header > nav > h5 {
+header > nav > h4 {
   padding-left: 15px;
+  margin-top: 60px;
+  margin-bottom: 0%;
 }
 
 header > nav > ul > li {
-  background-color: turquoise;
+  background-color: #c3e8bd;
   float: left;
+  margin-top: 27px;
   display: inline;
 }
 
 header > nav > ul > li > a {
   display: block;
-  padding: 15px;
-}
+  padding: 18px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
-header > nav > ul > li > .loginA {
-  display: block;
-  padding: 14px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  color: #040403;
 }
 
 header > nav > ul > li > a:hover {
-  background-color: cadetblue;
+  background-color: #5b7553;
+  color: antiquewhite;
 }
 
 .responsivePic {
@@ -89,20 +87,34 @@ header > nav > ul > li > a:hover {
   grid-area: LogoPic;
   padding: 10px;
   text-align: center;
-  background-color: teal;
+  background-color: #8eb897;
+}
+
+header > #LogInButton > h4{
+    margin-top: 80px;
+}
+
+header > #LogInButton > h4 >a{
+    color: #040403;
+    background-color: #8eb897;
+    
+    padding-top: 80px;
+    padding-bottom: 86px;
+    padding-left: 20px;
+    padding-right: 21px;
+}
+
+header > #LogInButton > h4 >a:hover{
+    background-color: #c3e8bd;
 }
 
 #LogInButton {
   grid-area: LogInButton;
-  background-color: teal;
-  padding-top: 60px;
-  padding-left: 20px;
-  padding-right: 20px;
   text-align: center;
 }
 
 .mainContent {
-  background-color: rosybrown;
+  background-color: #9ddbad;
   grid-area: mainContent;
 }
 
@@ -122,31 +134,33 @@ header > nav > ul > li > a:hover {
 
 main > div > h2 {
   width: 100px;
+  border-radius: 10px;
   margin-left: auto;
   margin-right: 542px;
   margin-top: 20px;
   padding: 20px;
   text-align: center;
   text-transform: uppercase;
-  background-color: khaki;
+  background-color: white;
 }
 
 main > div > form {
-  border-radius: 20px;
+  border-radius: 10px;
   width: 300px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
   padding: 20px;
   text-align: left;
-  background-color: khaki;
+  background-color: white;
 }
 
 #buttonLogin {
-  background-color: #4caf50; 
+  background-color: #4caf50;
   border: none;
   color: white;
   padding: 10px 22px;
+  border-radius: 5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -154,18 +168,19 @@ main > div > form {
 }
 
 #buttonReset {
-    background-color: rgb(160, 47, 3); 
-    border: none;
-    color: white;
-    padding: 10px 22px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
+  background-color: rgb(160, 47, 3);
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
 
 #featuredIntro {
-  background-color: tan;
+  background-color: white;
 
   grid-area: featuredIntro;
   margin: 10px;
@@ -173,7 +188,7 @@ main > div > form {
 }
 
 #article1 {
-  background-color: tan;
+  background-color: white;
 
   grid-area: article1;
   margin: 10px;
@@ -181,7 +196,7 @@ main > div > form {
 }
 
 #article2 {
-  background-color: tan;
+  background-color: white;
 
   grid-area: article2;
   margin: 10px;
@@ -189,14 +204,21 @@ main > div > form {
 }
 
 .SideContent {
-  background-color: saddlebrown;
-
+  background-color: #5b7553;
+  color: antiquewhite;
+  
   grid-area: SideContent;
   grid-column: 4 / span 2;
   padding: 10px;
 }
+
+aside > ul{
+  list-style-type: none;
+}
+
 footer {
-  background-color: slategray;
+  background-color: #8eb897;
+  color: #040403;
   text-align: center;
   grid-area: Footer;
 }
